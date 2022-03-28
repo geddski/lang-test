@@ -1,0 +1,17 @@
+@top Template { statement+ }
+
+statement {
+  String
+}
+
+@tokens {
+  whitespace { std.whitespace+ }
+  
+  String {
+    '"' (!["\\] | "\\" _)* '"' |
+    "'" (!['\\] | "\\" _)* "'"
+  }
+}
+
+@detectDelim
+@skip { whitespace }

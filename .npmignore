@@ -1,0 +1,9 @@
+/src
+/test
+/examples
+/node_modules
+rollup.config.js
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+index.html
